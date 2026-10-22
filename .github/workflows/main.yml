@@ -49,7 +49,9 @@ jobs:
           distribution: temurin
           java-version: "21"
           cache: maven
-
+      - name: change dir
+        run: cd electronic-journal
+        
       - name: Make Maven Wrapper executable
         run: chmod +x mvnw
 
